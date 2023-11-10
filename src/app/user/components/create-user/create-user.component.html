@@ -1,0 +1,111 @@
+<mat-card>
+  <mat-card-content>
+    <form [formGroup]="customerform" (ngSubmit)="SaveCustomer()">
+      <mat-form-field class="mat-50">
+        <mat-label>Nombre</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field class="mat-50">
+        <mat-label>Apellido</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field class="mat-50" >
+        <mat-label>Telefono</mat-label>
+        <input type="tel" matInput placeholder="1234567">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field class="mat-50">
+        <mat-label>Celular</mat-label>
+        <input type="tel" matInput placeholder="3001234567">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field class="mat-50">
+        <mat-label for="email">Enter your email</mat-label>
+        <input
+          matInput
+          placeholder="pat@example.com"
+          formControlName="email"
+          id="email"
+          autocomplete="email"
+          required
+        />
+        <mat-error *ngIf="email.invalid">{{ getErrorMessage() }}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="mat-50">
+        <mat-label for="fecha">Fecha</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          placeholder="Selecciona una fecha"
+          formControlName="fecha"
+          id="fecha"
+          autocomplete="off"
+          required
+        />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-hint>MM/dd/yyyy</mat-hint>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="mat-50">
+        <mat-label for="country">Country</mat-label>
+        <mat-select formControlName="country" id="country">
+          <mat-option [value]="item" *ngFor="let item of countrylist()">{{
+            item
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      
+
+      <div class="file-input-container mat-50">
+        <label for="fileInput" class="file-input-label">Seleccionar Archivo</label>
+        <div class="file-input-wrapper">
+          <input
+            (change)="capturarfile($event)"
+            type="file"
+            id="fileInput"
+            class="file-input"
+          >
+          <span class="selected-file-name">{{ selectedFileName() }}</span>
+        </div>
+      </div>
+
+    
+      
+
+      
+      
+    </form>
+  </mat-card-content>
+  <mat-card-footer>
+    <div style="margin: 2%; text-align: right">
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="SaveCustomer()"
+      >
+        Guardar
+      </button>
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="clearform()"
+      >
+        Limpiar
+      </button>
+    </div>
+   
+    <div *ngFor="let session of sessions$ | async">
+      <h1>{{ session.firstName }} {{session.firstLastname }}</h1>
+    </div>
+    
+   
+
+  </mat-card-footer>
+</mat-card>

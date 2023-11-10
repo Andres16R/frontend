@@ -1,0 +1,95 @@
+mat-card{
+    margin: 2%;
+    text-align: left;
+}
+
+.mat-mdc-form-field {
+    width: 98%;
+    margin: 1%;
+}
+
+.mat-50{
+    width: 48%;
+    margin: 1%;
+}
+
+button{
+    margin: 2px;
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .file-input {
+    display: none; /* Oculta el input de tipo archivo */
+  }
+  
+  .file-input-label {
+    background-color: #0477ba; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+
+  .file-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .selected-file-name {
+    color: #0477ba;
+    font-weight: bold;
+  }
+
+
+  @media (max-width: 768px) {
+    /* Ajusta los estilos para pantallas más pequeñas, si es necesario */
+    .file-input-container {
+      font-size: 16px;
+    }
+  }
+
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .label-column {
+    flex: 30%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .value-column {
+    flex: 70%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bold-label {
+    font-weight: bold;
+  }
+  
+
+
+  

@@ -1,0 +1,237 @@
+[
+  {
+    "opcIdentificador": "52",
+    "opcOpcIdentificador": null,
+    "opcNombre": "Afiliaciones",
+    "opcRuta": null,
+    "children": [
+      {
+        "opcIdentificador": "53",
+        "opcOpcIdentificador": "52",
+        "opcNombre": "Grupo Familiar",
+        "opcRuta": "/pages/empleador/consultarGrupoFamiliarEmpleador.jspx",
+        "children": []
+      },
+      {
+        "opcIdentificador": "55",
+        "opcOpcIdentificador": "52",
+        "opcNombre": "Estadísticas de Afiliación",
+        "opcRuta": "/pages/empleador/consultarEstadisticasAfiliacion.jspx",
+        "children": []
+      },
+      {
+        "opcIdentificador": "54",
+        "opcOpcIdentificador": "52",
+        "opcNombre": "Documentos Pendientes por Afiliado",
+        "opcRuta": "/pages/empleador/consultaDocumentosPendientes.jspx",
+        "children": []
+      },
+      {
+        "opcIdentificador": "56",
+        "opcOpcIdentificador": "52",
+        "opcNombre": "Afiliados Cancelados",
+        "opcRuta": "/pages/empleador/consultaAfiliadosCancelados.jspx",
+        "children": []
+      },
+      {
+        "opcIdentificador": "58",
+        "opcOpcIdentificador": "52",
+        "opcNombre": "Documentos Pendientes por Empresa",
+        "opcRuta": "/pages/empleador/consultarTotalDocumentosPendientes.jspx",
+        "children": []
+      },
+      {
+        "opcIdentificador": "57",
+        "opcOpcIdentificador": "52",
+        "opcNombre": "Afiliados por IPS",
+        "opcRuta": "/pages/empleador/listarAfiliadosIPS.jspx",
+        "children": []
+      }
+    ]
+  },
+  {
+    "opcIdentificador": "50",
+    "opcOpcIdentificador": null,
+    "opcNombre": "Datos del Empleador",
+    "opcRuta": null,
+    "children": [
+      {
+        "opcIdentificador": "51",
+        "opcOpcIdentificador": "50",
+        "opcNombre": "Actualizar Información Empleador",
+        "opcRuta": "/pages/empleador/actualizacionEmpleador.jspx",
+        "children": []
+      }
+    ]
+  },
+  {
+    "opcIdentificador": "70",
+    "opcOpcIdentificador": null,
+    "opcNombre": "Licencias e Incapacidades",
+    "opcRuta": null,
+    "children": [
+      {
+        "opcIdentificador": "390",
+        "opcOpcIdentificador": "70",
+        "opcNombre": "Reporte Pagos por  Prestaciones Económicas",
+        "opcRuta": "/pages/empleador/consultarCuentasCobro.jspx",
+        "children": []
+      }
+    ]
+  },
+  {
+    "opcIdentificador": "397",
+    "opcOpcIdentificador": null,
+    "opcNombre": "Movilidad a Subsidiado ",
+    "opcRuta": null,
+    "children": [
+      {
+        "opcIdentificador": "398",
+        "opcOpcIdentificador": "397",
+        "opcNombre": "Descargar Formulario",
+        "opcRuta": "/pages/afiliaciones/asistente.jspx",
+        "children": []
+      }
+    ]
+  },
+  {
+    "opcIdentificador": "59",
+    "opcOpcIdentificador": null,
+    "opcNombre": "Aportes y Cartera",
+    "opcRuta": null,
+    "children": [
+      {
+        "opcIdentificador": "60",
+        "opcOpcIdentificador": "59",
+        "opcNombre": "POS",
+        "opcRuta": null,
+        "children": [
+          {
+            "opcIdentificador": "62",
+            "opcOpcIdentificador": "60",
+            "opcNombre": "Pagos por Planilla",
+            "opcRuta": "/pages/empleador/consultaPagosPlanilla.jspx",
+            "children": []
+          },
+          {
+            "opcIdentificador": "64",
+            "opcOpcIdentificador": "60",
+            "opcNombre": "Certificación planilla única",
+            "opcRuta": "/pages/empleador/certificadoPlanillaUnica.jspx",
+            "children": []
+          },
+          {
+            "opcIdentificador": "63",
+            "opcOpcIdentificador": "60",
+            "opcNombre": "Pagos por Periodo",
+            "opcRuta": "/pages/empleador/consultarPagosPorPeriodo.jspx",
+            "children": []
+          },
+          {
+            "opcIdentificador": "61",
+            "opcOpcIdentificador": "60",
+            "opcNombre": "Estado Cuenta",
+            "opcRuta": "/pages/empleador/consultarEstadoCuenta.jspx",
+            "children": []
+          },
+          {
+            "opcIdentificador": "325",
+            "opcOpcIdentificador": "60",
+            "opcNombre": "Certificación de Pagos",
+            "opcRuta": "/pages/empleador/certificacionPagos.jspx",
+            "children": []
+          }
+        ]
+      },
+      {
+        "opcIdentificador": "65",
+        "opcOpcIdentificador": "59",
+        "opcNombre": "UPC Adicional",
+        "opcRuta": null,
+        "children": [
+          {
+            "opcIdentificador": "67",
+            "opcOpcIdentificador": "65",
+            "opcNombre": "Pagos Inconsistentes",
+            "opcRuta": "/pages/empleador/listarPagosIncUpcAdicional.jspx",
+            "children": []
+          },
+          {
+            "opcIdentificador": "66",
+            "opcOpcIdentificador": "65",
+            "opcNombre": "Pagos Consistentes",
+            "opcRuta": "/pages/empleador/listarPagosConsistentesUpcAdicional.jspx",
+            "children": []
+          }
+        ]
+      },
+      {
+        "opcIdentificador": "68",
+        "opcOpcIdentificador": "59",
+        "opcNombre": "PAC",
+        "opcRuta": null,
+        "children": [
+          {
+            "opcIdentificador": "69",
+            "opcOpcIdentificador": "68",
+            "opcNombre": "Pagos Plan Complementario",
+            "opcRuta": "/pages/pac/planesAtencionComplementaria.jspx",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "opcIdentificador": "75",
+    "opcOpcIdentificador": null,
+    "opcNombre": "Servicio al Cliente",
+    "opcRuta": null,
+    "children": [
+      {
+        "opcIdentificador": "353",
+        "opcOpcIdentificador": "75",
+        "opcNombre": "Certificaciones",
+        "opcRuta": null,
+        "children": [
+          {
+            "opcIdentificador": "354",
+            "opcOpcIdentificador": "353",
+            "opcNombre": "Afiliación",
+            "opcRuta": "/pages/empleador/certificacionAfiliacion.jspx",
+            "children": []
+          }
+        ]
+      },
+      {
+        "opcIdentificador": "76",
+        "opcOpcIdentificador": "75",
+        "opcNombre": "Quejas o Reclamos",
+        "opcRuta": "/pages/contactenos/menuQueja.jspx",
+        "children": [
+          {
+            "opcIdentificador": "77",
+            "opcOpcIdentificador": "76",
+            "opcNombre": "Registrar Queja o Reclamo",
+            "opcRuta": "/pages/contactenos/menuQueja.jspx",
+            "children": []
+          },
+          {
+            "opcIdentificador": "78",
+            "opcOpcIdentificador": "76",
+            "opcNombre": "Seguimiento Queja o Reclamo",
+            "opcRuta": "/pages/contactenos/menuQueja.jspx",
+            "children": []
+          }
+        ]
+      },
+      {
+        "opcIdentificador": "328",
+        "opcOpcIdentificador": "75",
+        "opcNombre": "Impresión Carné",
+        "opcRuta": "/pages/empleador/carnetAfiliados.jspx",
+        "children": []
+      }
+    ]
+  }
+]

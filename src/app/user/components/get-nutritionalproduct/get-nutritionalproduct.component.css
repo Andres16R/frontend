@@ -1,0 +1,133 @@
+/* app.component.css */
+.mat-tab-group {
+  margin-top: 20px;
+}
+
+/* Estilo para la pestaña 1 */
+.mat-tab-label-1 {
+  background-color: #ff5733;
+  color: white;
+}
+
+/* Estilo para la pestaña 2 */
+.mat-tab-label-2 {
+  background-color: #33ff57;
+  color: white;
+}
+
+/* Estilo para la pestaña 3 */
+.mat-tab-label-3 {
+  background-color: #3366ff;
+  color: white;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.vertical-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+.horizontal-cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.horizontal-card {
+  flex: 1;
+  margin-right: 16px;
+}
+
+button{
+  margin: 2px;
+}
+
+.small-button {
+  font-size: 10px;
+  padding: 5px 8px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.button-container button {
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+ 
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.label-value-pair {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+}
+
+.value {
+  margin-left: 0;
+}
+
+.bold-label {
+  font-weight: bold;
+}
+
+.value span {
+  text-align: left;
+  margin-left: 10px; /* Ajusta el margen izquierdo*/
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.label-column {
+  flex: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.value-column {
+  flex: 70%;
+  display: flex;
+  align-items: center;
+}

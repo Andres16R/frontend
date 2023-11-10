@@ -1,0 +1,91 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-bottom: 60px;
+  /* Agregar un margen inferior para el footer */
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.content-with-margin {
+  flex: 1;
+  padding: 20px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table caption {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.custom-table th {
+  background-color: #f0f0f0;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.footer-toolbar {
+  background-color: #0e4174;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.1%;
+  font-size: 14px;
+}
+
+.mat-list-item-content {
+  font-size: 16px !important;
+  color: black !important;
+  font-weight: normal !important;
+}
+
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-right-buttons {
+  margin-left: auto;
+}
+
+/* Reducir el tamaño de fuente en pantallas pequeñas */
+@media (max-width: 767px) {
+  .footer-toolbar {
+    font-size: 14px;
+  }
+}
+
+/* Espaciado y relleno en pantallas pequeñas */
+@media (max-width: 767px) {
+  .footer-toolbar {
+    padding: 5px;
+  }
+}
+
+/* Alinear contenido al centro en pantallas pequeñas */
+@media (max-width: 767px) {
+  .footer-toolbar {
+    text-align: center;
+  }
+}

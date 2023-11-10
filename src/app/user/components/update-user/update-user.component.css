@@ -1,0 +1,123 @@
+/* app.component.css */
+.mat-tab-group {
+  margin-top: 20px;
+}
+
+/* Estilo para la pestaña 1 */
+.mat-tab-label-1 {
+  background-color: #ff5733;
+  color: white;
+}
+
+/* Estilo para la pestaña 2 */
+.mat-tab-label-2 {
+  background-color: #33ff57;
+  color: white;
+}
+
+/* Estilo para la pestaña 3 */
+.mat-tab-label-3 {
+  background-color: #3366ff;
+  color: white;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.vertical-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button{
+  margin: 2px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Coloca los botones al lado derecho */
+  align-items: center; /* Alinea verticalmente los botones al centro */
+  flex-direction: row; /* Disposición horizontal de los botones */
+}
+
+.button-container button {
+  font-size: 12px; /* Ajusta el tamaño de fuente según tus preferencias */
+  padding: 5px 10px; /* Ajusta el relleno (padding) según tus preferencias */
+  margin-left: 10px; /* Agrega un margen izquierdo para separar los botones */
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+
+/* Estilo para cada columna */
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre elementos dentro de cada columna */
+}
+
+/* Estilo para cada par de etiquetas y valores */
+.label-value-pair {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  gap: 10px; /* Espacio entre etiquetas y valores */
+}
+
+.value {
+  margin-left: 0; /* Ajusta el valor según tus preferencias */
+}
+
+.bold-label {
+  font-weight: bold;
+}
+
+.value span {
+  text-align: left;
+  margin-left: 10px;
+}
+  
+custom-accordion {
+  max-height: 300px;
+  overflow-y: auto; /* Habilita el desplazamiento vertical cuando el contenido excede la altura máxima */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.label-column {
+  flex: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.value-column {
+  flex: 90%;
+  display: flex;
+  align-items: center;
+}

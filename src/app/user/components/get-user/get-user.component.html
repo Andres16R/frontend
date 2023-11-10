@@ -1,0 +1,95 @@
+<meta name="description" content="Informacion de Usuario">
+<mat-card class="custom-card">
+  <!-- Formulario con campo de texto y botón -->
+  <mat-card-content>
+    <div class="custom-table-container">
+      <table
+        mat-table
+        class="custom-table"
+        [dataSource]="dataUser()"
+        matSort
+        (matSortChange)="announceSortChange($event)"
+      >
+        <caption>
+          Informacion del Usuario
+        </caption>
+        <ng-container matColumnDef="id">
+          <th
+            mat-header-cell
+            mat-header-cell
+            *matHeaderCellDef
+            mat-sort-header
+            sortActionDescription="Sort by id"
+          >
+            No.
+          </th>
+          <td mat-cell mat-cell *matCellDef="let element">{{ element.id }}</td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="email">
+          <th
+            mat-header-cell
+            mat-header-cell
+            *matHeaderCellDef
+            mat-sort-header
+            sortActionDescription="Sort by id"
+          >
+            Name
+          </th>
+          <td mat-cell mat-cell *matCellDef="let element">
+            {{ element.email }}
+          </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="nombre">
+          <th
+            mat-header-cell
+            mat-header-cell
+            *matHeaderCellDef
+            mat-sort-header
+            sortActionDescription="Sort by id"
+          >
+            nombre
+          </th>
+          <td mat-cell mat-cell *matCellDef="let element">
+            {{ element.nombre }}
+          </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="password">
+          <th
+            mat-header-cell
+            mat-header-cell
+            *matHeaderCellDef
+            mat-sort-header
+            sortActionDescription="Sort by id"
+          >
+            password
+          </th>
+          <td mat-cell mat-cell *matCellDef="let element">
+            {{ element.password }}
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr
+          mat-row
+          *matRowDef="let row; columns: displayedColumns"
+          class="mat-row"
+          (click)="openDialog(row.id, row.email, row.nombre,row.password)"
+        ></tr>
+      </table>
+
+      <mat-paginator
+        [length]="totalLength()"
+        [pageSizeOptions]="pageSizeOptions"
+        (page)="onPageChanged($event)"
+      >
+      </mat-paginator>
+    </div>
+  </mat-card-content>
+</mat-card>
+
